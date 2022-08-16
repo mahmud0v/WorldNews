@@ -22,7 +22,7 @@ class NewsInfoScreen : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        val data :NewsData? = requireArguments().getParcelable<NewsData>("key")
+        val data :NewsData? = requireArguments().getParcelable("key")
         binding.webView.loadUrl(data!!.url)
 
     }
